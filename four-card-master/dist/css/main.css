@@ -1,8 +1,7 @@
-/* ***********************************
- *
- *    Ire's CSS Reset & Base
- *
- * *********************************** */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+/* Colors */
+/* Typography */
+/* Breakpoint */
 /* Reset margin, padding, border
  * *********************************** */
 html, body,
@@ -35,9 +34,12 @@ tr, th, td {
  * *********************************** */
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 26.5625em) {
+    html {
+      font-size: 50%; } }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.4; }
 
 * {
@@ -113,5 +115,105 @@ q:before {
   clip: rect(1px, 1px, 1px, 1px);
   left: -9999px;
   top: -9999px; }
+
+html, body {
+  height: 100%; }
+
+html {
+  font-family: "Poppins", sans-serif; }
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  color: #4c4e61;
+  font-weight: 200;
+  padding: 0 3.2rem; }
+
+.intro-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem; }
+  .intro-copy .intro-copy-title {
+    display: flex;
+    justify-content: center; }
+    .intro-copy .intro-copy-title h1 {
+      font-size: 3.6rem;
+      font-weight: 200; }
+      .intro-copy .intro-copy-title h1 span {
+        display: block;
+        font-weight: 600; }
+    @media only screen and (max-width: 26.5625em) {
+      .intro-copy .intro-copy-title h1 {
+        font-size: 3rem; } }
+  .intro-copy .intro-copy-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem; }
+    .intro-copy .intro-copy-body p {
+      line-height: 1.6;
+      width: 52rem; }
+    @media only screen and (max-width: 26.5625em) {
+      .intro-copy .intro-copy-body {
+        font-size: 2rem; } }
+
+.card-section .single-card-container .supervisor-card-bg, .card-section .single-card-container .calculator-card-bg, .card-section .double-card-container .team-builder-card-bg, .card-section .double-card-container .karma-card-bg {
+  border-radius: 8px;
+  padding-top: 0.4rem;
+  display: flex;
+  flex-direction: column; }
+
+.card-section .single-card-container .supervisor-card-bg .supervisor, .card-section .single-card-container .calculator-card-bg .calculator, .card-section .double-card-container .team-builder-card-bg .team-builder, .card-section .double-card-container .karma-card-bg .karma {
+  padding: 2.8rem 3rem 3.2rem;
+  background-color: white;
+  box-shadow: 0 7px 16px #d7e0ea;
+  border-radius: 0 0 8px 8px;
+  max-width: 35.6rem; }
+  .card-section .single-card-container .supervisor-card-bg .supervisor h3, .card-section .single-card-container .calculator-card-bg .calculator h3, .card-section .double-card-container .team-builder-card-bg .team-builder h3, .card-section .double-card-container .karma-card-bg .karma h3 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600; }
+  .card-section .single-card-container .supervisor-card-bg .supervisor p, .card-section .single-card-container .calculator-card-bg .calculator p, .card-section .double-card-container .team-builder-card-bg .team-builder p, .card-section .double-card-container .karma-card-bg .karma p {
+    padding-bottom: 4rem; }
+  .card-section .single-card-container .supervisor-card-bg .supervisor .icon, .card-section .single-card-container .calculator-card-bg .calculator .icon, .card-section .double-card-container .team-builder-card-bg .team-builder .icon, .card-section .double-card-container .karma-card-bg .karma .icon {
+    text-align: end; }
+
+@media only screen and (max-width: 26.5625em) {
+  .card-section .single-card-container .supervisor-card-bg .supervisor, .card-section .single-card-container .calculator-card-bg .calculator, .card-section .double-card-container .team-builder-card-bg .team-builder, .card-section .double-card-container .karma-card-bg .karma {
+    max-width: auto; } }
+.row .col:not(:last-child) {
+  margin-right: 3rem; }
+@media only screen and (max-width: 26.5625em) {
+  .row .col:not(:last-child) {
+    margin-right: 0; } }
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 10.4rem; }
+  @media only screen and (max-width: 26.5625em) {
+    .card-section {
+      flex-direction: column;
+      padding: 10rem 0; } }
+  .card-section .single-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card-section .single-card-container .supervisor-card-bg {
+      background-color: #45d3d3; }
+    .card-section .single-card-container .calculator-card-bg {
+      background-color: #549ef2; }
+  .card-section .double-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .card-section .double-card-container .team-builder-card-bg {
+      background-color: #ea5353;
+      margin: 3rem 0; }
+    .card-section .double-card-container .karma-card-bg {
+      background-color: #fcaf4a;
+      margin-bottom: 3rem; }
 
 /*# sourceMappingURL=main.css.map */

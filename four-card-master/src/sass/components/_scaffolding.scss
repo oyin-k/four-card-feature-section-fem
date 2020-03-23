@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    font-family: $font-family;
+}
+
+body {
+    background-color: $very-light-gray;
+    display: flex;
+    flex-direction: column;
+    color: $very-dark-blue;
+    font-weight: $text-light;
+    padding:0 3.2rem ;
+}

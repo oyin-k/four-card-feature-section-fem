@@ -1,0 +1,41 @@
+.intro-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+    .intro-copy-title {
+        display: flex;
+        justify-content: center;
+        h1{
+            font-size: 3.6rem;
+            font-weight: $text-light;
+            // line-height: 1.6;
+
+            span {
+                display: block;
+                font-weight: $text-bold;
+            }
+        }
+        @media only screen and (max-width: $bp-small) {
+            h1 {font-size: 3rem;}
+        }
+    }
+
+    .intro-copy-body {
+        display: flex;
+        justify-content: center;
+        
+       text-align: center;
+        padding-top: 1.5rem;
+        p{
+            line-height: 1.6;
+            width: 52rem;
+            
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
+
+        
+    }
+}

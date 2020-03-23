@@ -1,3 +1,15 @@
-// Base
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+//Configuration
+@import 'base/variables';
+
+// Reset
 @import 'base/reset';
+
+//Components
+@import 'components/scaffolding';
+
+//Layout
+@import 'layout/intro-text';
+@import 'layout/card-section';

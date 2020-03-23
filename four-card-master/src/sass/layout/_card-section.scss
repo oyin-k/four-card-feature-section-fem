@@ -1,0 +1,109 @@
+%card-bg {
+    border-radius: 8px;
+    padding-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+%card {
+    padding: 2.8rem 3rem 3.2rem;
+    background-color: $white;
+    box-shadow: 0 7px 16px $card-shadow;
+    border-radius: 0 0 8px 8px;
+    max-width: 35.6rem;
+    
+
+    h3 {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: $text-bold;
+    }
+
+    p {
+        // font-size: 1.3rem;
+        padding-bottom: 4rem;
+    }
+
+    .icon {
+        text-align: end;
+    }
+}
+
+@media only screen and (max-width: $bp-small) {
+    %card {
+        max-width: auto;
+    }  
+}
+
+.row {
+    .col:not(:last-child) {
+        margin-right: 3rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        .col:not(:last-child) {
+            margin-right: 0;
+        }  
+    }
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    // flex: 0 1 auto ;
+    padding: 0 10.4rem;
+   
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        padding: 10rem 0;
+    }
+
+    .single-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 3rem;
+
+        .supervisor-card-bg {
+            @extend %card-bg;
+            background-color: $cyan;
+            
+            .supervisor {
+                @extend %card; 
+            }
+        }
+        
+        .calculator-card-bg {
+            @extend %card-bg;
+            background-color: $blue;
+
+            .calculator {
+                @extend %card; 
+            }
+        }
+    }
+    .double-card-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .team-builder-card-bg {
+            @extend %card-bg;
+            background-color: $red;
+            margin: 3rem 0;
+
+            .team-builder {
+                @extend %card;
+            }
+        }
+        .karma-card-bg {
+            @extend %card-bg;
+            background-color: $orange;
+            margin-bottom: 3rem;
+
+            .karma {
+                @extend %card;
+            }
+        }
+    }
+}
